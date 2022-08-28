@@ -1,0 +1,48 @@
+.Bar, .setBar{
+    height: var(--higth-bar);
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 4px var(--aqua-color);
+    padding: 20px 120px;
+}
+
+.setBar{
+    top: var(--higth-bar);
+}
+
+.Bar{
+    z-index: 10;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    margin: 8px 4px;
+    cursor: pointer;
+}
+
+.btn img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.color{
+    margin-left: 8px;
+}
+
+.undo{
+    margin-left: auto;
+}
+
+.redo{
+    transform: rotateY(180deg);
+}
