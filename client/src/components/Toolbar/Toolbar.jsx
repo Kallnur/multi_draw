@@ -28,7 +28,7 @@ const Toolbar = () => {
             className={[classes.btn, classes.pencil].join(' ')} 
             icon={pencil} 
             alt='pen'
-            onClick={() => toolState.setTool(new Pen(canvasState.canvas))}
+            onClick={() => toolState.setTool(new Pen(canvasState.canvas, canvasState.socket, canvasState.sessionId))}
         />
         <Button 
             className={[classes.btn, classes.circle].join(' ')} 
@@ -39,7 +39,7 @@ const Toolbar = () => {
             className={[classes.btn, classes.rect].join(' ')} 
             icon={rect} 
             alt='pen'
-            onClick={() => toolState.setTool(new Rect(canvasState.canvas))}
+            onClick={() => toolState.setTool(new Rect(canvasState.canvas, canvasState.socket, canvasState.sessionId))}
         />
         <Button className={[classes.btn, classes.line].join(' ')} icon={line} alt='pen'/>
         <Button 
